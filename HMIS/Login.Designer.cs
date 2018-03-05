@@ -30,10 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(login));
             this.bunifuImageButton2 = new Bunifu.Framework.UI.BunifuImageButton();
-            this.username_Textbox1 = new Bunifu.Framework.UI.BunifuTextbox();
-            this.password_Textbox2 = new Bunifu.Framework.UI.BunifuTextbox();
             this.login_Button1 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.cancel_Button1 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.password_Textbox2 = new Bunifu.Framework.UI.BunifuTextbox();
+            this.username_Textbox1 = new Bunifu.Framework.UI.BunifuTextbox();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -50,32 +50,6 @@
             this.bunifuImageButton2.TabIndex = 3;
             this.bunifuImageButton2.TabStop = false;
             this.bunifuImageButton2.Zoom = 10;
-            // 
-            // username_Textbox1
-            // 
-            this.username_Textbox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
-            this.username_Textbox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("username_Textbox1.BackgroundImage")));
-            this.username_Textbox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.username_Textbox1.ForeColor = System.Drawing.Color.Snow;
-            this.username_Textbox1.Icon = ((System.Drawing.Image)(resources.GetObject("username_Textbox1.Icon")));
-            this.username_Textbox1.Location = new System.Drawing.Point(67, 94);
-            this.username_Textbox1.Name = "username_Textbox1";
-            this.username_Textbox1.Size = new System.Drawing.Size(199, 43);
-            this.username_Textbox1.TabIndex = 4;
-            this.username_Textbox1.text = "Username";
-            // 
-            // password_Textbox2
-            // 
-            this.password_Textbox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
-            this.password_Textbox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("password_Textbox2.BackgroundImage")));
-            this.password_Textbox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.password_Textbox2.ForeColor = System.Drawing.Color.Snow;
-            this.password_Textbox2.Icon = ((System.Drawing.Image)(resources.GetObject("password_Textbox2.Icon")));
-            this.password_Textbox2.Location = new System.Drawing.Point(67, 172);
-            this.password_Textbox2.Name = "password_Textbox2";
-            this.password_Textbox2.Size = new System.Drawing.Size(199, 43);
-            this.password_Textbox2.TabIndex = 5;
-            this.password_Textbox2.text = "Password";
             // 
             // login_Button1
             // 
@@ -147,6 +121,33 @@
             this.cancel_Button1.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cancel_Button1.Click += new System.EventHandler(this.cancel_Button1_Click);
             // 
+            // password_Textbox2
+            // 
+            this.password_Textbox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.password_Textbox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("password_Textbox2.BackgroundImage")));
+            this.password_Textbox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.password_Textbox2.ForeColor = System.Drawing.Color.Snow;
+            this.password_Textbox2.Icon = ((System.Drawing.Image)(resources.GetObject("password_Textbox2.Icon")));
+            this.password_Textbox2.Location = new System.Drawing.Point(67, 150);
+            this.password_Textbox2.Name = "password_Textbox2";
+            this.password_Textbox2.Size = new System.Drawing.Size(199, 43);
+            this.password_Textbox2.TabIndex = 5;
+            this.password_Textbox2.text = "Password";
+            this.password_Textbox2.OnTextChange += new System.EventHandler(this.password_Textbox2_OnTextChange);
+            // 
+            // username_Textbox1
+            // 
+            this.username_Textbox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.username_Textbox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("username_Textbox1.BackgroundImage")));
+            this.username_Textbox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.username_Textbox1.ForeColor = System.Drawing.Color.Snow;
+            this.username_Textbox1.Icon = ((System.Drawing.Image)(resources.GetObject("username_Textbox1.Icon")));
+            this.username_Textbox1.Location = new System.Drawing.Point(67, 64);
+            this.username_Textbox1.Name = "username_Textbox1";
+            this.username_Textbox1.Size = new System.Drawing.Size(199, 43);
+            this.username_Textbox1.TabIndex = 4;
+            this.username_Textbox1.text = "Username";
+            // 
             // login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -172,9 +173,9 @@
         #endregion
 
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton2;
-        private Bunifu.Framework.UI.BunifuTextbox username_Textbox1;
-        private Bunifu.Framework.UI.BunifuTextbox password_Textbox2;
         private Bunifu.Framework.UI.BunifuFlatButton login_Button1;
         private Bunifu.Framework.UI.BunifuFlatButton cancel_Button1;
+        private Bunifu.Framework.UI.BunifuTextbox password_Textbox2;
+        private Bunifu.Framework.UI.BunifuTextbox username_Textbox1;
     }
 }

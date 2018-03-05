@@ -16,6 +16,7 @@ namespace HMIS
         public login()
         {
             InitializeComponent();
+           
         }
 
 
@@ -45,9 +46,20 @@ namespace HMIS
 
             }
         }
+
+
         private void cancel_Button1_Click(object sender, EventArgs e)
         {
             this.Close();
         }
+
+        private void password_Textbox2_OnTextChange(object sender, EventArgs e)
+        {
+
+        }
+
+       
+
+      
     }
 }

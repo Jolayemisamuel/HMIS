@@ -2,7 +2,6 @@ C:\Users\Samuelson\Documents\Visual Studio 2017\Projects\HMIS\HMIS\bin\Debug\HMI
 C:\Users\Samuelson\Documents\Visual Studio 2017\Projects\HMIS\HMIS\bin\Debug\HMIS.exe
 C:\Users\Samuelson\Documents\Visual Studio 2017\Projects\HMIS\HMIS\bin\Debug\HMIS.pdb
 C:\Users\Samuelson\Documents\Visual Studio 2017\Projects\HMIS\HMIS\bin\Debug\Bunifu_UI_v1.5.3.dll
-C:\Users\Samuelson\Documents\Visual Studio 2017\Projects\HMIS\HMIS\obj\Debug\HMIS.csprojResolveAssemblyReference.cache
 C:\Users\Samuelson\Documents\Visual Studio 2017\Projects\HMIS\HMIS\obj\Debug\HMIS.Login.resources
 C:\Users\Samuelson\Documents\Visual Studio 2017\Projects\HMIS\HMIS\obj\Debug\HMIS.Properties.Resources.resources
 C:\Users\Samuelson\Documents\Visual Studio 2017\Projects\HMIS\HMIS\obj\Debug\HMIS.csproj.GenerateResource.Cache
