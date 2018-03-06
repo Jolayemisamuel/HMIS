@@ -47,6 +47,20 @@
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.logout_Button21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.customer_panel1 = new System.Windows.Forms.Panel();
+            this.home_panel1 = new System.Windows.Forms.Panel();
+            this.tabControl8 = new System.Windows.Forms.TabControl();
+            this.tabPage26 = new System.Windows.Forms.TabPage();
+            this.tabPage27 = new System.Windows.Forms.TabPage();
+            this.tabPage28 = new System.Windows.Forms.TabPage();
+            this.tabPage29 = new System.Windows.Forms.TabPage();
+            this.tabPage30 = new System.Windows.Forms.TabPage();
+            this.kitchen_panel1 = new System.Windows.Forms.Panel();
+            this.tabControl5 = new System.Windows.Forms.TabControl();
+            this.MenuList = new System.Windows.Forms.TabPage();
+            this.Cuisine = new System.Windows.Forms.TabPage();
+            this.AfricanDishes = new System.Windows.Forms.TabPage();
+            this.ContinentalDishes = new System.Windows.Forms.TabPage();
+            this.MenuCombo = new System.Windows.Forms.TabPage();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.tabPage8 = new System.Windows.Forms.TabPage();
@@ -79,6 +93,7 @@
             this.tabPage34 = new System.Windows.Forms.TabPage();
             this.tabPage35 = new System.Windows.Forms.TabPage();
             this.laundry_panel1 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.tabControl7 = new System.Windows.Forms.TabControl();
             this.tabPage36 = new System.Windows.Forms.TabPage();
             this.tabPage37 = new System.Windows.Forms.TabPage();
@@ -86,31 +101,21 @@
             this.tabPage39 = new System.Windows.Forms.TabPage();
             this.tabPage40 = new System.Windows.Forms.TabPage();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
             this.room_panel3 = new System.Windows.Forms.Panel();
-            this.home_panel1 = new System.Windows.Forms.Panel();
-            this.tabControl8 = new System.Windows.Forms.TabControl();
-            this.tabPage26 = new System.Windows.Forms.TabPage();
-            this.tabPage27 = new System.Windows.Forms.TabPage();
-            this.tabPage28 = new System.Windows.Forms.TabPage();
-            this.tabPage29 = new System.Windows.Forms.TabPage();
-            this.tabPage30 = new System.Windows.Forms.TabPage();
-            this.tabControl5 = new System.Windows.Forms.TabControl();
-            this.ContinentalDishes = new System.Windows.Forms.TabPage();
-            this.AfricanDishes = new System.Windows.Forms.TabPage();
-            this.kitchen_panel1 = new System.Windows.Forms.Panel();
-            this.Cuisine = new System.Windows.Forms.TabPage();
-            this.MenuList = new System.Windows.Forms.TabPage();
-            this.MenuCombo = new System.Windows.Forms.TabPage();
             this.menu_panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.dock_panel2.SuspendLayout();
             this.customer_panel1.SuspendLayout();
+            this.home_panel1.SuspendLayout();
+            this.tabControl8.SuspendLayout();
+            this.kitchen_panel1.SuspendLayout();
+            this.tabControl5.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.Inventory_panel1.SuspendLayout();
             this.tabControl3.SuspendLayout();
@@ -119,13 +124,10 @@
             this.employee_panel1.SuspendLayout();
             this.tabControl6.SuspendLayout();
             this.laundry_panel1.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.tabControl7.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.room_panel3.SuspendLayout();
-            this.home_panel1.SuspendLayout();
-            this.tabControl8.SuspendLayout();
-            this.tabControl5.SuspendLayout();
-            this.kitchen_panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menu_panel1
@@ -260,6 +262,7 @@
             this.laundry_Button7.Name = "laundry_Button7";
             this.laundry_Button7.Size = new System.Drawing.Size(68, 64);
             this.laundry_Button7.TabIndex = 6;
+            this.laundry_Button7.Click += new System.EventHandler(this.laundry_Button7_Click);
             // 
             // kitchen_Button6
             // 
@@ -391,7 +394,7 @@
             this.dock_panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.dock_panel2.Location = new System.Drawing.Point(78, 0);
             this.dock_panel2.Name = "dock_panel2";
-            this.dock_panel2.Size = new System.Drawing.Size(831, 75);
+            this.dock_panel2.Size = new System.Drawing.Size(831, 66);
             this.dock_panel2.TabIndex = 1;
             // 
             // bunifuMetroTextbox1
@@ -451,13 +454,150 @@
             // 
             // customer_panel1
             // 
-            this.customer_panel1.Controls.Add(this.tabControl2);
+            this.customer_panel1.Controls.Add(this.home_panel1);
             this.customer_panel1.Controls.Add(this.kitchen_panel1);
+            this.customer_panel1.Controls.Add(this.tabControl2);
             this.customer_panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.customer_panel1.Location = new System.Drawing.Point(78, 75);
+            this.customer_panel1.Location = new System.Drawing.Point(78, 66);
             this.customer_panel1.Name = "customer_panel1";
-            this.customer_panel1.Size = new System.Drawing.Size(831, 713);
+            this.customer_panel1.Size = new System.Drawing.Size(831, 722);
             this.customer_panel1.TabIndex = 3;
+            // 
+            // home_panel1
+            // 
+            this.home_panel1.Controls.Add(this.tabControl8);
+            this.home_panel1.Location = new System.Drawing.Point(224, 515);
+            this.home_panel1.Name = "home_panel1";
+            this.home_panel1.Size = new System.Drawing.Size(240, 144);
+            this.home_panel1.TabIndex = 8;
+            // 
+            // tabControl8
+            // 
+            this.tabControl8.Controls.Add(this.tabPage26);
+            this.tabControl8.Controls.Add(this.tabPage27);
+            this.tabControl8.Controls.Add(this.tabPage28);
+            this.tabControl8.Controls.Add(this.tabPage29);
+            this.tabControl8.Controls.Add(this.tabPage30);
+            this.tabControl8.Location = new System.Drawing.Point(3, 3);
+            this.tabControl8.Name = "tabControl8";
+            this.tabControl8.SelectedIndex = 0;
+            this.tabControl8.Size = new System.Drawing.Size(225, 99);
+            this.tabControl8.TabIndex = 0;
+            // 
+            // tabPage26
+            // 
+            this.tabPage26.Location = new System.Drawing.Point(4, 22);
+            this.tabPage26.Name = "tabPage26";
+            this.tabPage26.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage26.Size = new System.Drawing.Size(217, 73);
+            this.tabPage26.TabIndex = 0;
+            this.tabPage26.Text = "Employee Master";
+            this.tabPage26.UseVisualStyleBackColor = true;
+            // 
+            // tabPage27
+            // 
+            this.tabPage27.Location = new System.Drawing.Point(4, 22);
+            this.tabPage27.Name = "tabPage27";
+            this.tabPage27.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage27.Size = new System.Drawing.Size(217, 73);
+            this.tabPage27.TabIndex = 1;
+            this.tabPage27.Text = "Employee Phones";
+            this.tabPage27.UseVisualStyleBackColor = true;
+            // 
+            // tabPage28
+            // 
+            this.tabPage28.Location = new System.Drawing.Point(4, 22);
+            this.tabPage28.Name = "tabPage28";
+            this.tabPage28.Size = new System.Drawing.Size(217, 73);
+            this.tabPage28.TabIndex = 2;
+            this.tabPage28.Text = "Employee Address";
+            this.tabPage28.UseVisualStyleBackColor = true;
+            // 
+            // tabPage29
+            // 
+            this.tabPage29.Location = new System.Drawing.Point(4, 22);
+            this.tabPage29.Name = "tabPage29";
+            this.tabPage29.Size = new System.Drawing.Size(217, 73);
+            this.tabPage29.TabIndex = 3;
+            this.tabPage29.Text = "Employee Department";
+            this.tabPage29.UseVisualStyleBackColor = true;
+            // 
+            // tabPage30
+            // 
+            this.tabPage30.Location = new System.Drawing.Point(4, 22);
+            this.tabPage30.Name = "tabPage30";
+            this.tabPage30.Size = new System.Drawing.Size(217, 73);
+            this.tabPage30.TabIndex = 4;
+            this.tabPage30.Text = "Employee Debit";
+            this.tabPage30.UseVisualStyleBackColor = true;
+            // 
+            // kitchen_panel1
+            // 
+            this.kitchen_panel1.Controls.Add(this.tabControl5);
+            this.kitchen_panel1.Location = new System.Drawing.Point(12, 515);
+            this.kitchen_panel1.Name = "kitchen_panel1";
+            this.kitchen_panel1.Size = new System.Drawing.Size(206, 144);
+            this.kitchen_panel1.TabIndex = 5;
+            // 
+            // tabControl5
+            // 
+            this.tabControl5.Controls.Add(this.MenuList);
+            this.tabControl5.Controls.Add(this.Cuisine);
+            this.tabControl5.Controls.Add(this.AfricanDishes);
+            this.tabControl5.Controls.Add(this.ContinentalDishes);
+            this.tabControl5.Controls.Add(this.MenuCombo);
+            this.tabControl5.Location = new System.Drawing.Point(3, 3);
+            this.tabControl5.Name = "tabControl5";
+            this.tabControl5.SelectedIndex = 0;
+            this.tabControl5.Size = new System.Drawing.Size(190, 131);
+            this.tabControl5.TabIndex = 0;
+            // 
+            // MenuList
+            // 
+            this.MenuList.Location = new System.Drawing.Point(4, 22);
+            this.MenuList.Name = "MenuList";
+            this.MenuList.Padding = new System.Windows.Forms.Padding(3);
+            this.MenuList.Size = new System.Drawing.Size(182, 105);
+            this.MenuList.TabIndex = 0;
+            this.MenuList.Text = "Menu List";
+            this.MenuList.UseVisualStyleBackColor = true;
+            // 
+            // Cuisine
+            // 
+            this.Cuisine.Location = new System.Drawing.Point(4, 22);
+            this.Cuisine.Name = "Cuisine";
+            this.Cuisine.Padding = new System.Windows.Forms.Padding(3);
+            this.Cuisine.Size = new System.Drawing.Size(182, 105);
+            this.Cuisine.TabIndex = 1;
+            this.Cuisine.Text = "Cuisine";
+            this.Cuisine.UseVisualStyleBackColor = true;
+            // 
+            // AfricanDishes
+            // 
+            this.AfricanDishes.Location = new System.Drawing.Point(4, 22);
+            this.AfricanDishes.Name = "AfricanDishes";
+            this.AfricanDishes.Size = new System.Drawing.Size(182, 105);
+            this.AfricanDishes.TabIndex = 2;
+            this.AfricanDishes.Text = "African Dishes";
+            this.AfricanDishes.UseVisualStyleBackColor = true;
+            // 
+            // ContinentalDishes
+            // 
+            this.ContinentalDishes.Location = new System.Drawing.Point(4, 22);
+            this.ContinentalDishes.Name = "ContinentalDishes";
+            this.ContinentalDishes.Size = new System.Drawing.Size(182, 105);
+            this.ContinentalDishes.TabIndex = 3;
+            this.ContinentalDishes.Text = "Continental Dishes";
+            this.ContinentalDishes.UseVisualStyleBackColor = true;
+            // 
+            // MenuCombo
+            // 
+            this.MenuCombo.Location = new System.Drawing.Point(4, 22);
+            this.MenuCombo.Name = "MenuCombo";
+            this.MenuCombo.Size = new System.Drawing.Size(182, 105);
+            this.MenuCombo.TabIndex = 4;
+            this.MenuCombo.Text = "Menu Combo";
+            this.MenuCombo.UseVisualStyleBackColor = true;
             // 
             // tabControl2
             // 
@@ -487,7 +627,7 @@
             this.tabPage8.Location = new System.Drawing.Point(4, 22);
             this.tabPage8.Name = "tabPage8";
             this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage8.Size = new System.Drawing.Size(262, 118);
+            this.tabPage8.Size = new System.Drawing.Size(592, 118);
             this.tabPage8.TabIndex = 1;
             this.tabPage8.Text = "Company";
             this.tabPage8.UseVisualStyleBackColor = true;
@@ -496,7 +636,7 @@
             // 
             this.tabPage9.Location = new System.Drawing.Point(4, 22);
             this.tabPage9.Name = "tabPage9";
-            this.tabPage9.Size = new System.Drawing.Size(262, 118);
+            this.tabPage9.Size = new System.Drawing.Size(592, 118);
             this.tabPage9.TabIndex = 2;
             this.tabPage9.Text = "Company Customer";
             this.tabPage9.UseVisualStyleBackColor = true;
@@ -505,7 +645,7 @@
             // 
             this.tabPage10.Location = new System.Drawing.Point(4, 22);
             this.tabPage10.Name = "tabPage10";
-            this.tabPage10.Size = new System.Drawing.Size(262, 118);
+            this.tabPage10.Size = new System.Drawing.Size(592, 118);
             this.tabPage10.TabIndex = 3;
             this.tabPage10.Text = "Customer Activity";
             this.tabPage10.UseVisualStyleBackColor = true;
@@ -514,7 +654,7 @@
             // 
             this.tabPage11.Location = new System.Drawing.Point(4, 22);
             this.tabPage11.Name = "tabPage11";
-            this.tabPage11.Size = new System.Drawing.Size(262, 118);
+            this.tabPage11.Size = new System.Drawing.Size(592, 118);
             this.tabPage11.TabIndex = 4;
             this.tabPage11.Text = "Customer Room Rate";
             this.tabPage11.UseVisualStyleBackColor = true;
@@ -523,7 +663,7 @@
             // 
             this.Inventory_panel1.Controls.Add(this.tabControl3);
             this.Inventory_panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Inventory_panel1.Location = new System.Drawing.Point(78, 75);
+            this.Inventory_panel1.Location = new System.Drawing.Point(78, 66);
             this.Inventory_panel1.Name = "Inventory_panel1";
             this.Inventory_panel1.Size = new System.Drawing.Size(831, 96);
             this.Inventory_panel1.TabIndex = 4;
@@ -560,7 +700,7 @@
             this.tabPage13.Location = new System.Drawing.Point(4, 22);
             this.tabPage13.Name = "tabPage13";
             this.tabPage13.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage13.Size = new System.Drawing.Size(249, 114);
+            this.tabPage13.Size = new System.Drawing.Size(820, 114);
             this.tabPage13.TabIndex = 1;
             this.tabPage13.Text = "Inventory Activity";
             this.tabPage13.UseVisualStyleBackColor = true;
@@ -569,7 +709,7 @@
             // 
             this.tabPage14.Location = new System.Drawing.Point(4, 22);
             this.tabPage14.Name = "tabPage14";
-            this.tabPage14.Size = new System.Drawing.Size(249, 114);
+            this.tabPage14.Size = new System.Drawing.Size(820, 114);
             this.tabPage14.TabIndex = 2;
             this.tabPage14.Text = "Inventory Vendors";
             this.tabPage14.UseVisualStyleBackColor = true;
@@ -578,7 +718,7 @@
             // 
             this.tabPage15.Location = new System.Drawing.Point(4, 22);
             this.tabPage15.Name = "tabPage15";
-            this.tabPage15.Size = new System.Drawing.Size(249, 114);
+            this.tabPage15.Size = new System.Drawing.Size(820, 114);
             this.tabPage15.TabIndex = 3;
             this.tabPage15.Text = "Menu Combo Items";
             this.tabPage15.UseVisualStyleBackColor = true;
@@ -587,7 +727,7 @@
             // 
             this.tabPage16.Location = new System.Drawing.Point(4, 22);
             this.tabPage16.Name = "tabPage16";
-            this.tabPage16.Size = new System.Drawing.Size(249, 114);
+            this.tabPage16.Size = new System.Drawing.Size(820, 114);
             this.tabPage16.TabIndex = 4;
             this.tabPage16.Text = "Sales Menu";
             this.tabPage16.UseVisualStyleBackColor = true;
@@ -596,7 +736,7 @@
             // 
             this.tabPage17.Location = new System.Drawing.Point(4, 22);
             this.tabPage17.Name = "tabPage17";
-            this.tabPage17.Size = new System.Drawing.Size(249, 114);
+            this.tabPage17.Size = new System.Drawing.Size(820, 114);
             this.tabPage17.TabIndex = 5;
             this.tabPage17.Text = "Sales Menu Details";
             this.tabPage17.UseVisualStyleBackColor = true;
@@ -605,7 +745,7 @@
             // 
             this.tabPage18.Location = new System.Drawing.Point(4, 22);
             this.tabPage18.Name = "tabPage18";
-            this.tabPage18.Size = new System.Drawing.Size(249, 114);
+            this.tabPage18.Size = new System.Drawing.Size(820, 114);
             this.tabPage18.TabIndex = 6;
             this.tabPage18.Text = "Inventory Audit";
             this.tabPage18.UseVisualStyleBackColor = true;
@@ -614,7 +754,7 @@
             // 
             this.tabPage19.Location = new System.Drawing.Point(4, 22);
             this.tabPage19.Name = "tabPage19";
-            this.tabPage19.Size = new System.Drawing.Size(249, 114);
+            this.tabPage19.Size = new System.Drawing.Size(820, 114);
             this.tabPage19.TabIndex = 7;
             this.tabPage19.Text = "Inventory Audit Details";
             this.tabPage19.UseVisualStyleBackColor = true;
@@ -623,7 +763,7 @@
             // 
             this.tabPage20.Location = new System.Drawing.Point(4, 22);
             this.tabPage20.Name = "tabPage20";
-            this.tabPage20.Size = new System.Drawing.Size(249, 114);
+            this.tabPage20.Size = new System.Drawing.Size(820, 114);
             this.tabPage20.TabIndex = 8;
             this.tabPage20.Text = "LPO Activity";
             this.tabPage20.UseVisualStyleBackColor = true;
@@ -632,7 +772,7 @@
             // 
             this.bar_panel1.Controls.Add(this.tabControl4);
             this.bar_panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.bar_panel1.Location = new System.Drawing.Point(78, 171);
+            this.bar_panel1.Location = new System.Drawing.Point(78, 162);
             this.bar_panel1.Name = "bar_panel1";
             this.bar_panel1.Size = new System.Drawing.Size(831, 150);
             this.bar_panel1.TabIndex = 4;
@@ -665,7 +805,7 @@
             this.tabPage22.Location = new System.Drawing.Point(4, 22);
             this.tabPage22.Name = "tabPage22";
             this.tabPage22.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage22.Size = new System.Drawing.Size(254, 115);
+            this.tabPage22.Size = new System.Drawing.Size(446, 115);
             this.tabPage22.TabIndex = 1;
             this.tabPage22.Text = "Company";
             this.tabPage22.UseVisualStyleBackColor = true;
@@ -674,7 +814,7 @@
             // 
             this.tabPage23.Location = new System.Drawing.Point(4, 22);
             this.tabPage23.Name = "tabPage23";
-            this.tabPage23.Size = new System.Drawing.Size(254, 115);
+            this.tabPage23.Size = new System.Drawing.Size(446, 115);
             this.tabPage23.TabIndex = 2;
             this.tabPage23.Text = "Company Customer";
             this.tabPage23.UseVisualStyleBackColor = true;
@@ -683,7 +823,7 @@
             // 
             this.tabPage24.Location = new System.Drawing.Point(4, 22);
             this.tabPage24.Name = "tabPage24";
-            this.tabPage24.Size = new System.Drawing.Size(254, 115);
+            this.tabPage24.Size = new System.Drawing.Size(446, 115);
             this.tabPage24.TabIndex = 3;
             this.tabPage24.Text = "Customer Activity";
             this.tabPage24.UseVisualStyleBackColor = true;
@@ -692,7 +832,7 @@
             // 
             this.tabPage25.Location = new System.Drawing.Point(4, 22);
             this.tabPage25.Name = "tabPage25";
-            this.tabPage25.Size = new System.Drawing.Size(254, 115);
+            this.tabPage25.Size = new System.Drawing.Size(446, 115);
             this.tabPage25.TabIndex = 4;
             this.tabPage25.Text = "Customer Room Rate";
             this.tabPage25.UseVisualStyleBackColor = true;
@@ -701,9 +841,9 @@
             // 
             this.employee_panel1.Controls.Add(this.tabControl6);
             this.employee_panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.employee_panel1.Location = new System.Drawing.Point(78, 321);
+            this.employee_panel1.Location = new System.Drawing.Point(78, 312);
             this.employee_panel1.Name = "employee_panel1";
-            this.employee_panel1.Size = new System.Drawing.Size(831, 81);
+            this.employee_panel1.Size = new System.Drawing.Size(831, 140);
             this.employee_panel1.TabIndex = 6;
             // 
             // tabControl6
@@ -734,7 +874,7 @@
             this.tabPage32.Location = new System.Drawing.Point(4, 22);
             this.tabPage32.Name = "tabPage32";
             this.tabPage32.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage32.Size = new System.Drawing.Size(238, 105);
+            this.tabPage32.Size = new System.Drawing.Size(503, 105);
             this.tabPage32.TabIndex = 1;
             this.tabPage32.Text = "Employee Phones";
             this.tabPage32.UseVisualStyleBackColor = true;
@@ -743,7 +883,7 @@
             // 
             this.tabPage33.Location = new System.Drawing.Point(4, 22);
             this.tabPage33.Name = "tabPage33";
-            this.tabPage33.Size = new System.Drawing.Size(238, 105);
+            this.tabPage33.Size = new System.Drawing.Size(503, 105);
             this.tabPage33.TabIndex = 2;
             this.tabPage33.Text = "Employee Address";
             this.tabPage33.UseVisualStyleBackColor = true;
@@ -752,7 +892,7 @@
             // 
             this.tabPage34.Location = new System.Drawing.Point(4, 22);
             this.tabPage34.Name = "tabPage34";
-            this.tabPage34.Size = new System.Drawing.Size(238, 105);
+            this.tabPage34.Size = new System.Drawing.Size(503, 105);
             this.tabPage34.TabIndex = 3;
             this.tabPage34.Text = "Employee Department";
             this.tabPage34.UseVisualStyleBackColor = true;
@@ -761,19 +901,29 @@
             // 
             this.tabPage35.Location = new System.Drawing.Point(4, 22);
             this.tabPage35.Name = "tabPage35";
-            this.tabPage35.Size = new System.Drawing.Size(238, 105);
+            this.tabPage35.Size = new System.Drawing.Size(503, 105);
             this.tabPage35.TabIndex = 4;
             this.tabPage35.Text = "Employee Debit";
             this.tabPage35.UseVisualStyleBackColor = true;
             // 
             // laundry_panel1
             // 
-            this.laundry_panel1.Controls.Add(this.tabControl7);
-            this.laundry_panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.laundry_panel1.Location = new System.Drawing.Point(78, 402);
+            this.laundry_panel1.Controls.Add(this.panel1);
+            this.laundry_panel1.Controls.Add(this.room_panel3);
+            this.laundry_panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.laundry_panel1.Location = new System.Drawing.Point(78, 452);
             this.laundry_panel1.Name = "laundry_panel1";
-            this.laundry_panel1.Size = new System.Drawing.Size(831, 73);
+            this.laundry_panel1.Size = new System.Drawing.Size(831, 336);
             this.laundry_panel1.TabIndex = 7;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.tabControl7);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(831, 160);
+            this.panel1.TabIndex = 1;
             // 
             // tabControl7
             // 
@@ -782,7 +932,7 @@
             this.tabControl7.Controls.Add(this.tabPage38);
             this.tabControl7.Controls.Add(this.tabPage39);
             this.tabControl7.Controls.Add(this.tabPage40);
-            this.tabControl7.Location = new System.Drawing.Point(0, 3);
+            this.tabControl7.Location = new System.Drawing.Point(13, 12);
             this.tabControl7.Name = "tabControl7";
             this.tabControl7.SelectedIndex = 0;
             this.tabControl7.Size = new System.Drawing.Size(292, 131);
@@ -803,7 +953,7 @@
             this.tabPage37.Location = new System.Drawing.Point(4, 22);
             this.tabPage37.Name = "tabPage37";
             this.tabPage37.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage37.Size = new System.Drawing.Size(238, 105);
+            this.tabPage37.Size = new System.Drawing.Size(284, 105);
             this.tabPage37.TabIndex = 1;
             this.tabPage37.Text = "Company";
             this.tabPage37.UseVisualStyleBackColor = true;
@@ -812,7 +962,7 @@
             // 
             this.tabPage38.Location = new System.Drawing.Point(4, 22);
             this.tabPage38.Name = "tabPage38";
-            this.tabPage38.Size = new System.Drawing.Size(238, 105);
+            this.tabPage38.Size = new System.Drawing.Size(284, 105);
             this.tabPage38.TabIndex = 2;
             this.tabPage38.Text = "Company Customer";
             this.tabPage38.UseVisualStyleBackColor = true;
@@ -821,7 +971,7 @@
             // 
             this.tabPage39.Location = new System.Drawing.Point(4, 22);
             this.tabPage39.Name = "tabPage39";
-            this.tabPage39.Size = new System.Drawing.Size(238, 105);
+            this.tabPage39.Size = new System.Drawing.Size(284, 105);
             this.tabPage39.TabIndex = 3;
             this.tabPage39.Text = "Customer Activity";
             this.tabPage39.UseVisualStyleBackColor = true;
@@ -830,7 +980,7 @@
             // 
             this.tabPage40.Location = new System.Drawing.Point(4, 22);
             this.tabPage40.Name = "tabPage40";
-            this.tabPage40.Size = new System.Drawing.Size(238, 105);
+            this.tabPage40.Size = new System.Drawing.Size(284, 105);
             this.tabPage40.TabIndex = 4;
             this.tabPage40.Text = "Customer Room Rate";
             this.tabPage40.UseVisualStyleBackColor = true;
@@ -846,44 +996,19 @@
             this.tabControl1.Location = new System.Drawing.Point(9, 3);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(512, 248);
+            this.tabControl1.Size = new System.Drawing.Size(262, 104);
             this.tabControl1.TabIndex = 0;
             // 
-            // tabPage6
+            // tabPage1
             // 
-            this.tabPage6.Location = new System.Drawing.Point(4, 22);
-            this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Size = new System.Drawing.Size(504, 222);
-            this.tabPage6.TabIndex = 5;
-            this.tabPage6.Text = "Room Inspection";
-            this.tabPage6.UseVisualStyleBackColor = true;
-            // 
-            // tabPage5
-            // 
-            this.tabPage5.Location = new System.Drawing.Point(4, 22);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(504, 222);
-            this.tabPage5.TabIndex = 4;
-            this.tabPage5.Text = "Room Clean";
-            this.tabPage5.UseVisualStyleBackColor = true;
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(504, 222);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Room Booking";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(504, 222);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Rooms";
-            this.tabPage3.UseVisualStyleBackColor = true;
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(254, 78);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Building";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
             // tabPage2
             // 
@@ -895,175 +1020,61 @@
             this.tabPage2.Text = "Room Category";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // tabPage1
+            // tabPage3
             // 
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(504, 222);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Building";
-            this.tabPage1.UseVisualStyleBackColor = true;
-            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Size = new System.Drawing.Size(504, 222);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Rooms";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Size = new System.Drawing.Size(504, 222);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Room Booking";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Size = new System.Drawing.Size(504, 222);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "Room Clean";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // tabPage6
+            // 
+            this.tabPage6.Location = new System.Drawing.Point(4, 22);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Size = new System.Drawing.Size(504, 222);
+            this.tabPage6.TabIndex = 5;
+            this.tabPage6.Text = "Room Inspection";
+            this.tabPage6.UseVisualStyleBackColor = true;
             // 
             // room_panel3
             // 
             this.room_panel3.Controls.Add(this.tabControl1);
-            this.room_panel3.Location = new System.Drawing.Point(85, 75);
+            this.room_panel3.Location = new System.Drawing.Point(164, 186);
             this.room_panel3.Name = "room_panel3";
-            this.room_panel3.Size = new System.Drawing.Size(531, 286);
+            this.room_panel3.Size = new System.Drawing.Size(281, 126);
             this.room_panel3.TabIndex = 2;
             this.room_panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint_1);
-            // 
-            // home_panel1
-            // 
-            this.home_panel1.Controls.Add(this.tabControl8);
-            this.home_panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.home_panel1.Location = new System.Drawing.Point(78, 475);
-            this.home_panel1.Name = "home_panel1";
-            this.home_panel1.Size = new System.Drawing.Size(831, 97);
-            this.home_panel1.TabIndex = 8;
-            // 
-            // tabControl8
-            // 
-            this.tabControl8.Controls.Add(this.tabPage26);
-            this.tabControl8.Controls.Add(this.tabPage27);
-            this.tabControl8.Controls.Add(this.tabPage28);
-            this.tabControl8.Controls.Add(this.tabPage29);
-            this.tabControl8.Controls.Add(this.tabPage30);
-            this.tabControl8.Location = new System.Drawing.Point(5, 3);
-            this.tabControl8.Name = "tabControl8";
-            this.tabControl8.SelectedIndex = 0;
-            this.tabControl8.Size = new System.Drawing.Size(530, 131);
-            this.tabControl8.TabIndex = 0;
-            // 
-            // tabPage26
-            // 
-            this.tabPage26.Location = new System.Drawing.Point(4, 22);
-            this.tabPage26.Name = "tabPage26";
-            this.tabPage26.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage26.Size = new System.Drawing.Size(522, 105);
-            this.tabPage26.TabIndex = 0;
-            this.tabPage26.Text = "Employee Master";
-            this.tabPage26.UseVisualStyleBackColor = true;
-            // 
-            // tabPage27
-            // 
-            this.tabPage27.Location = new System.Drawing.Point(4, 22);
-            this.tabPage27.Name = "tabPage27";
-            this.tabPage27.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage27.Size = new System.Drawing.Size(238, 105);
-            this.tabPage27.TabIndex = 1;
-            this.tabPage27.Text = "Employee Phones";
-            this.tabPage27.UseVisualStyleBackColor = true;
-            // 
-            // tabPage28
-            // 
-            this.tabPage28.Location = new System.Drawing.Point(4, 22);
-            this.tabPage28.Name = "tabPage28";
-            this.tabPage28.Size = new System.Drawing.Size(238, 105);
-            this.tabPage28.TabIndex = 2;
-            this.tabPage28.Text = "Employee Address";
-            this.tabPage28.UseVisualStyleBackColor = true;
-            // 
-            // tabPage29
-            // 
-            this.tabPage29.Location = new System.Drawing.Point(4, 22);
-            this.tabPage29.Name = "tabPage29";
-            this.tabPage29.Size = new System.Drawing.Size(238, 105);
-            this.tabPage29.TabIndex = 3;
-            this.tabPage29.Text = "Employee Department";
-            this.tabPage29.UseVisualStyleBackColor = true;
-            // 
-            // tabPage30
-            // 
-            this.tabPage30.Location = new System.Drawing.Point(4, 22);
-            this.tabPage30.Name = "tabPage30";
-            this.tabPage30.Size = new System.Drawing.Size(238, 105);
-            this.tabPage30.TabIndex = 4;
-            this.tabPage30.Text = "Employee Debit";
-            this.tabPage30.UseVisualStyleBackColor = true;
-            // 
-            // tabControl5
-            // 
-            this.tabControl5.Controls.Add(this.MenuList);
-            this.tabControl5.Controls.Add(this.Cuisine);
-            this.tabControl5.Controls.Add(this.AfricanDishes);
-            this.tabControl5.Controls.Add(this.ContinentalDishes);
-            this.tabControl5.Controls.Add(this.MenuCombo);
-            this.tabControl5.Location = new System.Drawing.Point(5, 3);
-            this.tabControl5.Name = "tabControl5";
-            this.tabControl5.SelectedIndex = 0;
-            this.tabControl5.Size = new System.Drawing.Size(401, 131);
-            this.tabControl5.TabIndex = 0;
-            // 
-            // ContinentalDishes
-            // 
-            this.ContinentalDishes.Location = new System.Drawing.Point(4, 22);
-            this.ContinentalDishes.Name = "ContinentalDishes";
-            this.ContinentalDishes.Size = new System.Drawing.Size(238, 105);
-            this.ContinentalDishes.TabIndex = 3;
-            this.ContinentalDishes.Text = "Continental Dishes";
-            this.ContinentalDishes.UseVisualStyleBackColor = true;
-            // 
-            // AfricanDishes
-            // 
-            this.AfricanDishes.Location = new System.Drawing.Point(4, 22);
-            this.AfricanDishes.Name = "AfricanDishes";
-            this.AfricanDishes.Size = new System.Drawing.Size(238, 105);
-            this.AfricanDishes.TabIndex = 2;
-            this.AfricanDishes.Text = "African Dishes";
-            this.AfricanDishes.UseVisualStyleBackColor = true;
-            // 
-            // kitchen_panel1
-            // 
-            this.kitchen_panel1.Controls.Add(this.tabControl5);
-            this.kitchen_panel1.Location = new System.Drawing.Point(7, 503);
-            this.kitchen_panel1.Name = "kitchen_panel1";
-            this.kitchen_panel1.Size = new System.Drawing.Size(831, 136);
-            this.kitchen_panel1.TabIndex = 5;
-            // 
-            // Cuisine
-            // 
-            this.Cuisine.Location = new System.Drawing.Point(4, 22);
-            this.Cuisine.Name = "Cuisine";
-            this.Cuisine.Padding = new System.Windows.Forms.Padding(3);
-            this.Cuisine.Size = new System.Drawing.Size(238, 105);
-            this.Cuisine.TabIndex = 1;
-            this.Cuisine.Text = "Cuisine";
-            this.Cuisine.UseVisualStyleBackColor = true;
-            // 
-            // MenuList
-            // 
-            this.MenuList.Location = new System.Drawing.Point(4, 22);
-            this.MenuList.Name = "MenuList";
-            this.MenuList.Padding = new System.Windows.Forms.Padding(3);
-            this.MenuList.Size = new System.Drawing.Size(238, 105);
-            this.MenuList.TabIndex = 0;
-            this.MenuList.Text = "Menu List";
-            this.MenuList.UseVisualStyleBackColor = true;
-            // 
-            // MenuCombo
-            // 
-            this.MenuCombo.Location = new System.Drawing.Point(4, 22);
-            this.MenuCombo.Name = "MenuCombo";
-            this.MenuCombo.Size = new System.Drawing.Size(393, 105);
-            this.MenuCombo.TabIndex = 4;
-            this.MenuCombo.Text = "Menu Combo";
-            this.MenuCombo.UseVisualStyleBackColor = true;
             // 
             // main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(909, 788);
-            this.Controls.Add(this.home_panel1);
             this.Controls.Add(this.laundry_panel1);
             this.Controls.Add(this.employee_panel1);
             this.Controls.Add(this.bar_panel1);
             this.Controls.Add(this.Inventory_panel1);
             this.Controls.Add(this.customer_panel1);
-            this.Controls.Add(this.room_panel3);
             this.Controls.Add(this.dock_panel2);
             this.Controls.Add(this.menu_panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -1076,6 +1087,10 @@
             this.dock_panel2.ResumeLayout(false);
             this.dock_panel2.PerformLayout();
             this.customer_panel1.ResumeLayout(false);
+            this.home_panel1.ResumeLayout(false);
+            this.tabControl8.ResumeLayout(false);
+            this.kitchen_panel1.ResumeLayout(false);
+            this.tabControl5.ResumeLayout(false);
             this.tabControl2.ResumeLayout(false);
             this.Inventory_panel1.ResumeLayout(false);
             this.tabControl3.ResumeLayout(false);
@@ -1084,13 +1099,10 @@
             this.employee_panel1.ResumeLayout(false);
             this.tabControl6.ResumeLayout(false);
             this.laundry_panel1.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.tabControl7.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.room_panel3.ResumeLayout(false);
-            this.home_panel1.ResumeLayout(false);
-            this.tabControl8.ResumeLayout(false);
-            this.tabControl5.ResumeLayout(false);
-            this.kitchen_panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1115,8 +1127,6 @@
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
         private System.Windows.Forms.Panel customer_panel1;
         private System.Windows.Forms.TabControl tabControl2;
-        private System.Windows.Forms.TabPage tabPage7;
-        private System.Windows.Forms.TabPage tabPage8;
         private System.Windows.Forms.TabPage tabPage9;
         private System.Windows.Forms.TabPage tabPage10;
         private System.Windows.Forms.TabPage tabPage11;
@@ -1160,7 +1170,6 @@
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.TabPage tabPage6;
-        private System.Windows.Forms.Panel room_panel3;
         private System.Windows.Forms.Panel home_panel1;
         private System.Windows.Forms.TabControl tabControl8;
         private System.Windows.Forms.TabPage tabPage26;
@@ -1170,11 +1179,15 @@
         private System.Windows.Forms.TabPage tabPage30;
         private System.Windows.Forms.Panel kitchen_panel1;
         private System.Windows.Forms.TabControl tabControl5;
-        private System.Windows.Forms.TabPage AfricanDishes;
-        private System.Windows.Forms.TabPage ContinentalDishes;
+        private System.Windows.Forms.TabPage tabPage7;
+        private System.Windows.Forms.TabPage tabPage8;
+        private System.Windows.Forms.Panel room_panel3;
         private System.Windows.Forms.TabPage MenuList;
         private System.Windows.Forms.TabPage Cuisine;
+        private System.Windows.Forms.TabPage AfricanDishes;
+        private System.Windows.Forms.TabPage ContinentalDishes;
         private System.Windows.Forms.TabPage MenuCombo;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 

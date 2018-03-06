@@ -40,7 +40,7 @@ namespace HMIS
         private void main_Load(object sender, EventArgs e)
         {
             hidePanels();
-            room_panel3.Visible = true;
+            home_panel1.Visible = true;
         }
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
@@ -51,7 +51,12 @@ namespace HMIS
         {
             hidePanels();
             home_panel1.Visible = true;
-
+            Inventory_panel1.Visible = false;
+            customer_panel1.Visible = false;
+            employee_panel1.Visible = false;
+            bar_panel1.Visible = false;
+            kitchen_panel1.Visible = false;
+            laundry_panel1.Visible = false;
         }
 
         private void bunifuCustomLabel1_Click(object sender, EventArgs e)
@@ -68,11 +73,18 @@ namespace HMIS
         {
             hidePanels();
             room_panel3.Visible = true;
+            Inventory_panel1.Visible = false;
+            customer_panel1.Visible = false;
+            employee_panel1.Visible = false;
+            bar_panel1.Visible = false;
+            kitchen_panel1.Visible = false;
+            laundry_panel1.Visible = false;
         }
 
         private void logout_Button21_Click(object sender, EventArgs e)
         {
             this.Close();
+           
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)
@@ -124,30 +136,69 @@ namespace HMIS
         {
             hidePanels();
             customer_panel1.Visible = true;
+            Inventory_panel1.Visible = false;
+            employee_panel1.Visible = false;
+            bar_panel1.Visible = false;
+            kitchen_panel1.Visible = false;
+            laundry_panel1.Visible = false;
         }
 
         private void inventory_Button4_Click(object sender, EventArgs e)
         {
             hidePanels();
             Inventory_panel1.Visible = true;
+            customer_panel1.Visible = false;
+            employee_panel1.Visible = false;
+            bar_panel1.Visible = false;
+            kitchen_panel1.Visible = false;
+            laundry_panel1.Visible = false;
         }
 
         private void employee_Button1_Click(object sender, EventArgs e)
         {
             hidePanels();
             employee_panel1.Visible = true;
+            Inventory_panel1.Visible = false;
+            customer_panel1.Visible = false;
+            bar_panel1.Visible = false;
+            kitchen_panel1.Visible = false;
+            laundry_panel1.Visible = false;
         }
 
         private void bar_Button5_Click(object sender, EventArgs e)
         {
             hidePanels();
             bar_panel1.Visible = true;
+            Inventory_panel1.Visible = false;
+            customer_panel1.Visible = false;
+            employee_panel1.Visible = false;
+            kitchen_panel1.Visible = false;
+            laundry_panel1.Visible = false;
         }
 
         private void kitchen_Button6_Click(object sender, EventArgs e)
         {
             hidePanels();
             kitchen_panel1.Visible = true;
+            Inventory_panel1.Visible = false;
+            customer_panel1.Visible = false;
+            employee_panel1.Visible = false;
+            bar_panel1.Visible = false;
+            laundry_panel1.Visible = false;
         }
+
+        private void laundry_Button7_Click(object sender, EventArgs e)
+        {
+            hidePanels();
+            laundry_panel1.Visible = true;
+            Inventory_panel1.Visible = false;
+            customer_panel1.Visible = false;
+            employee_panel1.Visible = false;
+            bar_panel1.Visible = false;
+            kitchen_panel1.Visible = false;
+
+        }
+
+       
     }
 }
