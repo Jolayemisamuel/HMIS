@@ -9,4 +9,3 @@ C:\Users\Samuelson\Documents\Visual Studio 2017\Projects\HMIS\HMIS\obj\Debug\HMI
 C:\Users\Samuelson\Documents\Visual Studio 2017\Projects\HMIS\HMIS\obj\Debug\HMIS.exe
 C:\Users\Samuelson\Documents\Visual Studio 2017\Projects\HMIS\HMIS\obj\Debug\HMIS.pdb
 C:\Users\Samuelson\Documents\Visual Studio 2017\Projects\HMIS\HMIS\obj\Debug\HMIS.main.resources
-C:\Users\Samuelson\Documents\Visual Studio 2017\Projects\HMIS\HMIS\obj\Debug\HMIS.csprojResolveAssemblyReference.cache
