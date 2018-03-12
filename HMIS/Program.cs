@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace HMIS
 {
-    static class Program
+    static class program
     {
         /// <summary>
         /// The main entry point for the application.
@@ -18,6 +18,7 @@ namespace HMIS
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new Dashboard());
             Application.Run(new login());
+            Application.Exit();
         }
     }
 }

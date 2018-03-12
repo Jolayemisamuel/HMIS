@@ -51,12 +51,7 @@ namespace HMIS
         {
             hidePanels();
             home_panel1.Visible = true;
-            Inventory_panel1.Visible = false;
-            customer_panel1.Visible = false;
-            employee_panel1.Visible = false;
-            bar_panel1.Visible = false;
-            kitchen_panel1.Visible = false;
-            
+            room_panel3.BringToFront();
         }
 
         private void bunifuCustomLabel1_Click(object sender, EventArgs e)
@@ -64,7 +59,7 @@ namespace HMIS
 
         }
 
-        private void Dashboard_Load(object sender, EventArgs e)
+        private void dashboard_Load(object sender, EventArgs e)
         {
 
         }
@@ -73,12 +68,9 @@ namespace HMIS
         {
             hidePanels();
             room_panel3.Visible = true;
-            Inventory_panel1.Visible = false;
-            customer_panel1.Visible = false;
-            employee_panel1.Visible = false;
-            bar_panel1.Visible = false;
-            kitchen_panel1.Visible = false;
-           
+          
+
+
         }
 
         private void logout_Button21_Click(object sender, EventArgs e)
@@ -136,10 +128,7 @@ namespace HMIS
         {
             hidePanels();
             customer_panel1.Visible = true;
-            Inventory_panel1.Visible = false;
-            employee_panel1.Visible = false;
-            bar_panel1.Visible = false;
-            kitchen_panel1.Visible = false;
+           
             
         }
 
@@ -147,10 +136,7 @@ namespace HMIS
         {
             hidePanels();
             Inventory_panel1.Visible = true;
-            customer_panel1.Visible = false;
-            employee_panel1.Visible = false;
-            bar_panel1.Visible = false;
-            kitchen_panel1.Visible = false;
+         
          
         }
 
@@ -158,10 +144,7 @@ namespace HMIS
         {
             hidePanels();
             employee_panel1.Visible = true;
-            Inventory_panel1.Visible = false;
-            customer_panel1.Visible = false;
-            bar_panel1.Visible = false;
-            kitchen_panel1.Visible = false;
+            
          
         }
 
@@ -169,10 +152,7 @@ namespace HMIS
         {
             hidePanels();
             bar_panel1.Visible = true;
-            Inventory_panel1.Visible = false;
-            customer_panel1.Visible = false;
-            employee_panel1.Visible = false;
-            kitchen_panel1.Visible = false;
+            
            
         }
 
@@ -180,10 +160,7 @@ namespace HMIS
         {
             hidePanels();
             kitchen_panel1.Visible = true;
-            Inventory_panel1.Visible = false;
-            customer_panel1.Visible = false;
-            employee_panel1.Visible = false;
-            bar_panel1.Visible = false;
+          
           
         }
 
