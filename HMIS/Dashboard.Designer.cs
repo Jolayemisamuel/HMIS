@@ -100,6 +100,7 @@
             this.Employee_Address = new System.Windows.Forms.TabPage();
             this.Employee_Department = new System.Windows.Forms.TabPage();
             this.Employee_Debit = new System.Windows.Forms.TabPage();
+            this.exit_Button2 = new Bunifu.Framework.UI.BunifuImageButton();
             this.menu_panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.dock_panel2.SuspendLayout();
@@ -117,6 +118,7 @@
             this.tabControl1.SuspendLayout();
             this.home_panel1.SuspendLayout();
             this.tabControl8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.exit_Button2)).BeginInit();
             this.SuspendLayout();
             // 
             // menu_panel1
@@ -202,15 +204,15 @@
             this.bunifuTileButton9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuTileButton9.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuTileButton9.ForeColor = System.Drawing.Color.White;
-            this.bunifuTileButton9.Image = null;
+            this.bunifuTileButton9.Image = ((System.Drawing.Image)(resources.GetObject("bunifuTileButton9.Image")));
             this.bunifuTileButton9.ImagePosition = 11;
             this.bunifuTileButton9.ImageZoom = 40;
             this.bunifuTileButton9.LabelPosition = 29;
             this.bunifuTileButton9.LabelText = "Reports";
-            this.bunifuTileButton9.Location = new System.Drawing.Point(8, 703);
+            this.bunifuTileButton9.Location = new System.Drawing.Point(8, 700);
             this.bunifuTileButton9.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.bunifuTileButton9.Name = "bunifuTileButton9";
-            this.bunifuTileButton9.Size = new System.Drawing.Size(68, 64);
+            this.bunifuTileButton9.Size = new System.Drawing.Size(68, 67);
             this.bunifuTileButton9.TabIndex = 7;
             // 
             // cleanup_Button8
@@ -377,6 +379,7 @@
             // dock_panel2
             // 
             this.dock_panel2.BackColor = System.Drawing.Color.Silver;
+            this.dock_panel2.Controls.Add(this.exit_Button2);
             this.dock_panel2.Controls.Add(this.bunifuMetroTextbox1);
             this.dock_panel2.Controls.Add(this.bunifuCustomLabel1);
             this.dock_panel2.Controls.Add(this.logout_Button21);
@@ -433,7 +436,7 @@
             this.logout_Button21.IdleFillColor = System.Drawing.SystemColors.ButtonFace;
             this.logout_Button21.IdleForecolor = System.Drawing.Color.Black;
             this.logout_Button21.IdleLineColor = System.Drawing.Color.Black;
-            this.logout_Button21.Location = new System.Drawing.Point(582, 13);
+            this.logout_Button21.Location = new System.Drawing.Point(582, 5);
             this.logout_Button21.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.logout_Button21.Name = "logout_Button21";
             this.logout_Button21.Size = new System.Drawing.Size(82, 41);
@@ -477,7 +480,7 @@
             this.tabPage8.Location = new System.Drawing.Point(4, 22);
             this.tabPage8.Name = "tabPage8";
             this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage8.Size = new System.Drawing.Size(300, 118);
+            this.tabPage8.Size = new System.Drawing.Size(461, 159);
             this.tabPage8.TabIndex = 1;
             this.tabPage8.Text = "Company";
             this.tabPage8.UseVisualStyleBackColor = true;
@@ -486,7 +489,7 @@
             // 
             this.tabPage9.Location = new System.Drawing.Point(4, 22);
             this.tabPage9.Name = "tabPage9";
-            this.tabPage9.Size = new System.Drawing.Size(300, 118);
+            this.tabPage9.Size = new System.Drawing.Size(461, 159);
             this.tabPage9.TabIndex = 2;
             this.tabPage9.Text = "Company Customer";
             this.tabPage9.UseVisualStyleBackColor = true;
@@ -495,7 +498,7 @@
             // 
             this.tabPage10.Location = new System.Drawing.Point(4, 22);
             this.tabPage10.Name = "tabPage10";
-            this.tabPage10.Size = new System.Drawing.Size(300, 118);
+            this.tabPage10.Size = new System.Drawing.Size(461, 159);
             this.tabPage10.TabIndex = 3;
             this.tabPage10.Text = "Customer Activity";
             this.tabPage10.UseVisualStyleBackColor = true;
@@ -504,7 +507,7 @@
             // 
             this.tabPage11.Location = new System.Drawing.Point(4, 22);
             this.tabPage11.Name = "tabPage11";
-            this.tabPage11.Size = new System.Drawing.Size(300, 118);
+            this.tabPage11.Size = new System.Drawing.Size(461, 159);
             this.tabPage11.TabIndex = 4;
             this.tabPage11.Text = "Customer Room Rate";
             this.tabPage11.UseVisualStyleBackColor = true;
@@ -549,7 +552,7 @@
             this.Inventory_Activity.Location = new System.Drawing.Point(4, 22);
             this.Inventory_Activity.Name = "Inventory_Activity";
             this.Inventory_Activity.Padding = new System.Windows.Forms.Padding(3);
-            this.Inventory_Activity.Size = new System.Drawing.Size(544, 122);
+            this.Inventory_Activity.Size = new System.Drawing.Size(543, 135);
             this.Inventory_Activity.TabIndex = 1;
             this.Inventory_Activity.Text = "Inventory Activity";
             this.Inventory_Activity.UseVisualStyleBackColor = true;
@@ -558,7 +561,7 @@
             // 
             this.Inventory_Vendors.Location = new System.Drawing.Point(4, 22);
             this.Inventory_Vendors.Name = "Inventory_Vendors";
-            this.Inventory_Vendors.Size = new System.Drawing.Size(544, 122);
+            this.Inventory_Vendors.Size = new System.Drawing.Size(543, 135);
             this.Inventory_Vendors.TabIndex = 2;
             this.Inventory_Vendors.Text = "Inventory Vendors";
             this.Inventory_Vendors.UseVisualStyleBackColor = true;
@@ -567,7 +570,7 @@
             // 
             this.Menu_Combo_Items.Location = new System.Drawing.Point(4, 22);
             this.Menu_Combo_Items.Name = "Menu_Combo_Items";
-            this.Menu_Combo_Items.Size = new System.Drawing.Size(544, 122);
+            this.Menu_Combo_Items.Size = new System.Drawing.Size(543, 135);
             this.Menu_Combo_Items.TabIndex = 3;
             this.Menu_Combo_Items.Text = "Menu Combo Items";
             this.Menu_Combo_Items.UseVisualStyleBackColor = true;
@@ -576,7 +579,7 @@
             // 
             this.Sales_Menu.Location = new System.Drawing.Point(4, 22);
             this.Sales_Menu.Name = "Sales_Menu";
-            this.Sales_Menu.Size = new System.Drawing.Size(544, 122);
+            this.Sales_Menu.Size = new System.Drawing.Size(543, 135);
             this.Sales_Menu.TabIndex = 4;
             this.Sales_Menu.Text = "Sales Menu";
             this.Sales_Menu.UseVisualStyleBackColor = true;
@@ -585,7 +588,7 @@
             // 
             this.Sales_Menu_Details.Location = new System.Drawing.Point(4, 22);
             this.Sales_Menu_Details.Name = "Sales_Menu_Details";
-            this.Sales_Menu_Details.Size = new System.Drawing.Size(544, 122);
+            this.Sales_Menu_Details.Size = new System.Drawing.Size(543, 135);
             this.Sales_Menu_Details.TabIndex = 5;
             this.Sales_Menu_Details.Text = "Sales Menu Details";
             this.Sales_Menu_Details.UseVisualStyleBackColor = true;
@@ -594,7 +597,7 @@
             // 
             this.Inventory_Audit.Location = new System.Drawing.Point(4, 22);
             this.Inventory_Audit.Name = "Inventory_Audit";
-            this.Inventory_Audit.Size = new System.Drawing.Size(544, 122);
+            this.Inventory_Audit.Size = new System.Drawing.Size(543, 135);
             this.Inventory_Audit.TabIndex = 6;
             this.Inventory_Audit.Text = "Inventory Audit";
             this.Inventory_Audit.UseVisualStyleBackColor = true;
@@ -603,7 +606,7 @@
             // 
             this.Inventory_Audit_Details.Location = new System.Drawing.Point(4, 22);
             this.Inventory_Audit_Details.Name = "Inventory_Audit_Details";
-            this.Inventory_Audit_Details.Size = new System.Drawing.Size(544, 122);
+            this.Inventory_Audit_Details.Size = new System.Drawing.Size(543, 135);
             this.Inventory_Audit_Details.TabIndex = 7;
             this.Inventory_Audit_Details.Text = "Inventory Audit Details";
             this.Inventory_Audit_Details.UseVisualStyleBackColor = true;
@@ -612,7 +615,7 @@
             // 
             this.LPO_Activity.Location = new System.Drawing.Point(4, 22);
             this.LPO_Activity.Name = "LPO_Activity";
-            this.LPO_Activity.Size = new System.Drawing.Size(544, 122);
+            this.LPO_Activity.Size = new System.Drawing.Size(543, 135);
             this.LPO_Activity.TabIndex = 8;
             this.LPO_Activity.Text = "LPO Activity";
             this.LPO_Activity.UseVisualStyleBackColor = true;
@@ -721,7 +724,7 @@
             this.tabPage32.Location = new System.Drawing.Point(4, 22);
             this.tabPage32.Name = "tabPage32";
             this.tabPage32.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage32.Size = new System.Drawing.Size(274, 105);
+            this.tabPage32.Size = new System.Drawing.Size(522, 155);
             this.tabPage32.TabIndex = 1;
             this.tabPage32.Text = "Employee Phones";
             this.tabPage32.UseVisualStyleBackColor = true;
@@ -730,7 +733,7 @@
             // 
             this.tabPage33.Location = new System.Drawing.Point(4, 22);
             this.tabPage33.Name = "tabPage33";
-            this.tabPage33.Size = new System.Drawing.Size(274, 105);
+            this.tabPage33.Size = new System.Drawing.Size(522, 155);
             this.tabPage33.TabIndex = 2;
             this.tabPage33.Text = "Employee Address";
             this.tabPage33.UseVisualStyleBackColor = true;
@@ -739,7 +742,7 @@
             // 
             this.tabPage34.Location = new System.Drawing.Point(4, 22);
             this.tabPage34.Name = "tabPage34";
-            this.tabPage34.Size = new System.Drawing.Size(274, 105);
+            this.tabPage34.Size = new System.Drawing.Size(522, 155);
             this.tabPage34.TabIndex = 3;
             this.tabPage34.Text = "Employee Department";
             this.tabPage34.UseVisualStyleBackColor = true;
@@ -748,7 +751,7 @@
             // 
             this.tabPage35.Location = new System.Drawing.Point(4, 22);
             this.tabPage35.Name = "tabPage35";
-            this.tabPage35.Size = new System.Drawing.Size(274, 105);
+            this.tabPage35.Size = new System.Drawing.Size(522, 155);
             this.tabPage35.TabIndex = 4;
             this.tabPage35.Text = "Employee Debit";
             this.tabPage35.UseVisualStyleBackColor = true;
@@ -789,7 +792,7 @@
             this.Cuisine.Location = new System.Drawing.Point(4, 22);
             this.Cuisine.Name = "Cuisine";
             this.Cuisine.Padding = new System.Windows.Forms.Padding(3);
-            this.Cuisine.Size = new System.Drawing.Size(219, 105);
+            this.Cuisine.Size = new System.Drawing.Size(469, 147);
             this.Cuisine.TabIndex = 1;
             this.Cuisine.Text = "Cuisine";
             this.Cuisine.UseVisualStyleBackColor = true;
@@ -798,7 +801,7 @@
             // 
             this.African_Dishes.Location = new System.Drawing.Point(4, 22);
             this.African_Dishes.Name = "African_Dishes";
-            this.African_Dishes.Size = new System.Drawing.Size(219, 105);
+            this.African_Dishes.Size = new System.Drawing.Size(469, 147);
             this.African_Dishes.TabIndex = 2;
             this.African_Dishes.Text = "African Dishes";
             this.African_Dishes.UseVisualStyleBackColor = true;
@@ -807,7 +810,7 @@
             // 
             this.Continental_Dishes.Location = new System.Drawing.Point(4, 22);
             this.Continental_Dishes.Name = "Continental_Dishes";
-            this.Continental_Dishes.Size = new System.Drawing.Size(219, 105);
+            this.Continental_Dishes.Size = new System.Drawing.Size(469, 147);
             this.Continental_Dishes.TabIndex = 3;
             this.Continental_Dishes.Text = "Continental Dishes";
             this.Continental_Dishes.UseVisualStyleBackColor = true;
@@ -816,7 +819,7 @@
             // 
             this.Menu_Combo.Location = new System.Drawing.Point(4, 22);
             this.Menu_Combo.Name = "Menu_Combo";
-            this.Menu_Combo.Size = new System.Drawing.Size(219, 105);
+            this.Menu_Combo.Size = new System.Drawing.Size(469, 147);
             this.Menu_Combo.TabIndex = 4;
             this.Menu_Combo.Text = "Menu Combo";
             this.Menu_Combo.UseVisualStyleBackColor = true;
@@ -967,6 +970,20 @@
             this.Employee_Debit.Text = "Employee Debit";
             this.Employee_Debit.UseVisualStyleBackColor = true;
             // 
+            // exit_Button2
+            // 
+            this.exit_Button2.BackColor = System.Drawing.Color.Transparent;
+            this.exit_Button2.Image = ((System.Drawing.Image)(resources.GetObject("exit_Button2.Image")));
+            this.exit_Button2.ImageActive = null;
+            this.exit_Button2.Location = new System.Drawing.Point(794, 4);
+            this.exit_Button2.Name = "exit_Button2";
+            this.exit_Button2.Size = new System.Drawing.Size(34, 31);
+            this.exit_Button2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.exit_Button2.TabIndex = 13;
+            this.exit_Button2.TabStop = false;
+            this.exit_Button2.Zoom = 10;
+            this.exit_Button2.Click += new System.EventHandler(this.bunifuImageButton2_Click);
+            // 
             // main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -984,7 +1001,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "main";
             this.Text = "Form1";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.dashboard_Load);
             this.menu_panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
@@ -1004,6 +1020,7 @@
             this.tabControl1.ResumeLayout(false);
             this.home_panel1.ResumeLayout(false);
             this.tabControl8.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.exit_Button2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1081,6 +1098,7 @@
         private System.Windows.Forms.TabPage Employee_Address;
         private System.Windows.Forms.TabPage Employee_Department;
         private System.Windows.Forms.TabPage Employee_Debit;
+        private Bunifu.Framework.UI.BunifuImageButton exit_Button2;
     }
 }
 
