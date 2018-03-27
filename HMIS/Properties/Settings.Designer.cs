@@ -34,5 +34,16 @@ namespace HMIS.Properties {
                 this["PasswordChar"] = value;
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=SAMUELSON-PC\\SQLEXPRESS;Initial Catalog=HMIS;Integrated Security=True" +
+            ";Pooling=False")]
+        public string HMISConnectionString {
+            get {
+                return ((string)(this["HMISConnectionString"]));
+            }
+        }
     }
 }
