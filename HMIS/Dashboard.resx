@@ -2276,7 +2276,7 @@
   <data name="bunifuTileButton9.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABHNCSVQICAgIfAhkiAAAAAFzUkdCAK7O
-        HOkAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAA3VAAAN1QE91ljxAAAAGXRFWHRTb2Z0d2FyZQB3d3cu
+        HOkAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAA3TAAAN0wG91RxqAAAAGXRFWHRTb2Z0d2FyZQB3d3cu
         aW5rc2NhcGUub3Jnm+48GgAAooFJREFUeF7t/Xu0bFtdH/rGDe4Ggki70q60G65HLsfr8SbtQCR6zZUg
         IAaTY5CHaLiEDSYk8fjE0zwao/GIR/GVY25aOxHlESIqqAFMQCOge4O8CW9RVEQeIhv2WvvBlodv6vY+
         quasUaM+vz5G1ayq2WvO/senNRh7rTlH9fH7fb+1155rzr82m82apqncX77oS++c3Cu5b/KQ5DHJ1yff
@@ -7510,7 +7510,7 @@
   <data name="exit_Button2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAAABHNCSVQICAgIfAhkiAAAAAFzUkdCAK7O
-        HOkAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAAsSAAALEgHS3X78AAASXUlEQVR4Xu2dCch2RRXHzTZb
+        HOkAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAAsQAAALEAGtI711AAASXUlEQVR4Xu2dCch2RRXHzTZb
         rFwiWiiLiGghK6NMbdFWs1LTpNCUMLTdqFTKMrSkLCtoITJQwjZNK1NbDUKFFs0W2yNNM9s0tX3v/6OG
         3r7O+37P3Hvm3pm55wc/EP38nrn3Puc+s5w5s0UQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQ
         BEEQBEEQBBtyM7m9vI/cWT5ePkXuIw+Qz5R7yz3l4+QjJH+W/+emMgiaZ1u5mzxcniQ/Kr8qfyH/OVL+
@@ -7608,4 +7608,10 @@
         ntQFKwBOAAAAAElFTkSuQmCC
 </value>
   </data>
+  <metadata name="invent_zone_id.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="invent_cat_id.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
 </root>

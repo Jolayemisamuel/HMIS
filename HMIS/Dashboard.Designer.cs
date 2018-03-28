@@ -43,6 +43,7 @@
             this.room_Button2 = new Bunifu.Framework.UI.BunifuTileButton();
             this.home_Button1 = new Bunifu.Framework.UI.BunifuTileButton();
             this.dock_panel2 = new System.Windows.Forms.Panel();
+            this.exit_Button2 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuMetroTextbox1 = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.logout_Button21 = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -100,14 +101,16 @@
             this.Employee_Address = new System.Windows.Forms.TabPage();
             this.Employee_Department = new System.Windows.Forms.TabPage();
             this.Employee_Debit = new System.Windows.Forms.TabPage();
-            this.exit_Button2 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.menu_panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.dock_panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.exit_Button2)).BeginInit();
             this.customer_panel1.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.Inventory_panel1.SuspendLayout();
             this.tabControl3.SuspendLayout();
+            this.Inventory_Master.SuspendLayout();
             this.bar_panel1.SuspendLayout();
             this.tabControl4.SuspendLayout();
             this.employee_panel1.SuspendLayout();
@@ -118,7 +121,7 @@
             this.tabControl1.SuspendLayout();
             this.home_panel1.SuspendLayout();
             this.tabControl8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.exit_Button2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // menu_panel1
@@ -389,6 +392,20 @@
             this.dock_panel2.Size = new System.Drawing.Size(831, 66);
             this.dock_panel2.TabIndex = 1;
             // 
+            // exit_Button2
+            // 
+            this.exit_Button2.BackColor = System.Drawing.Color.Transparent;
+            this.exit_Button2.Image = ((System.Drawing.Image)(resources.GetObject("exit_Button2.Image")));
+            this.exit_Button2.ImageActive = null;
+            this.exit_Button2.Location = new System.Drawing.Point(794, 4);
+            this.exit_Button2.Name = "exit_Button2";
+            this.exit_Button2.Size = new System.Drawing.Size(34, 31);
+            this.exit_Button2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.exit_Button2.TabIndex = 13;
+            this.exit_Button2.TabStop = false;
+            this.exit_Button2.Zoom = 10;
+            this.exit_Button2.Click += new System.EventHandler(this.bunifuImageButton2_Click);
+            // 
             // bunifuMetroTextbox1
             // 
             this.bunifuMetroTextbox1.BorderColorFocused = System.Drawing.Color.Blue;
@@ -449,7 +466,7 @@
             this.customer_panel1.Controls.Add(this.tabControl2);
             this.customer_panel1.Location = new System.Drawing.Point(89, 80);
             this.customer_panel1.Name = "customer_panel1";
-            this.customer_panel1.Size = new System.Drawing.Size(561, 201);
+            this.customer_panel1.Size = new System.Drawing.Size(720, 401);
             this.customer_panel1.TabIndex = 3;
             // 
             // tabControl2
@@ -517,7 +534,7 @@
             this.Inventory_panel1.Controls.Add(this.tabControl3);
             this.Inventory_panel1.Location = new System.Drawing.Point(88, 77);
             this.Inventory_panel1.Name = "Inventory_panel1";
-            this.Inventory_panel1.Size = new System.Drawing.Size(561, 193);
+            this.Inventory_panel1.Size = new System.Drawing.Size(721, 404);
             this.Inventory_panel1.TabIndex = 4;
             // 
             // tabControl3
@@ -534,15 +551,16 @@
             this.tabControl3.Location = new System.Drawing.Point(5, 12);
             this.tabControl3.Name = "tabControl3";
             this.tabControl3.SelectedIndex = 0;
-            this.tabControl3.Size = new System.Drawing.Size(551, 161);
+            this.tabControl3.Size = new System.Drawing.Size(698, 334);
             this.tabControl3.TabIndex = 0;
             // 
             // Inventory_Master
             // 
+            this.Inventory_Master.Controls.Add(this.dataGridView1);
             this.Inventory_Master.Location = new System.Drawing.Point(4, 22);
             this.Inventory_Master.Name = "Inventory_Master";
             this.Inventory_Master.Padding = new System.Windows.Forms.Padding(3);
-            this.Inventory_Master.Size = new System.Drawing.Size(543, 135);
+            this.Inventory_Master.Size = new System.Drawing.Size(690, 308);
             this.Inventory_Master.TabIndex = 0;
             this.Inventory_Master.Text = "Inventory Master";
             this.Inventory_Master.UseVisualStyleBackColor = true;
@@ -552,7 +570,7 @@
             this.Inventory_Activity.Location = new System.Drawing.Point(4, 22);
             this.Inventory_Activity.Name = "Inventory_Activity";
             this.Inventory_Activity.Padding = new System.Windows.Forms.Padding(3);
-            this.Inventory_Activity.Size = new System.Drawing.Size(543, 135);
+            this.Inventory_Activity.Size = new System.Drawing.Size(690, 308);
             this.Inventory_Activity.TabIndex = 1;
             this.Inventory_Activity.Text = "Inventory Activity";
             this.Inventory_Activity.UseVisualStyleBackColor = true;
@@ -561,7 +579,7 @@
             // 
             this.Inventory_Vendors.Location = new System.Drawing.Point(4, 22);
             this.Inventory_Vendors.Name = "Inventory_Vendors";
-            this.Inventory_Vendors.Size = new System.Drawing.Size(543, 135);
+            this.Inventory_Vendors.Size = new System.Drawing.Size(690, 308);
             this.Inventory_Vendors.TabIndex = 2;
             this.Inventory_Vendors.Text = "Inventory Vendors";
             this.Inventory_Vendors.UseVisualStyleBackColor = true;
@@ -570,7 +588,7 @@
             // 
             this.Menu_Combo_Items.Location = new System.Drawing.Point(4, 22);
             this.Menu_Combo_Items.Name = "Menu_Combo_Items";
-            this.Menu_Combo_Items.Size = new System.Drawing.Size(543, 135);
+            this.Menu_Combo_Items.Size = new System.Drawing.Size(690, 308);
             this.Menu_Combo_Items.TabIndex = 3;
             this.Menu_Combo_Items.Text = "Menu Combo Items";
             this.Menu_Combo_Items.UseVisualStyleBackColor = true;
@@ -579,7 +597,7 @@
             // 
             this.Sales_Menu.Location = new System.Drawing.Point(4, 22);
             this.Sales_Menu.Name = "Sales_Menu";
-            this.Sales_Menu.Size = new System.Drawing.Size(543, 135);
+            this.Sales_Menu.Size = new System.Drawing.Size(690, 308);
             this.Sales_Menu.TabIndex = 4;
             this.Sales_Menu.Text = "Sales Menu";
             this.Sales_Menu.UseVisualStyleBackColor = true;
@@ -588,7 +606,7 @@
             // 
             this.Sales_Menu_Details.Location = new System.Drawing.Point(4, 22);
             this.Sales_Menu_Details.Name = "Sales_Menu_Details";
-            this.Sales_Menu_Details.Size = new System.Drawing.Size(543, 135);
+            this.Sales_Menu_Details.Size = new System.Drawing.Size(690, 308);
             this.Sales_Menu_Details.TabIndex = 5;
             this.Sales_Menu_Details.Text = "Sales Menu Details";
             this.Sales_Menu_Details.UseVisualStyleBackColor = true;
@@ -597,7 +615,7 @@
             // 
             this.Inventory_Audit.Location = new System.Drawing.Point(4, 22);
             this.Inventory_Audit.Name = "Inventory_Audit";
-            this.Inventory_Audit.Size = new System.Drawing.Size(543, 135);
+            this.Inventory_Audit.Size = new System.Drawing.Size(690, 308);
             this.Inventory_Audit.TabIndex = 6;
             this.Inventory_Audit.Text = "Inventory Audit";
             this.Inventory_Audit.UseVisualStyleBackColor = true;
@@ -606,7 +624,7 @@
             // 
             this.Inventory_Audit_Details.Location = new System.Drawing.Point(4, 22);
             this.Inventory_Audit_Details.Name = "Inventory_Audit_Details";
-            this.Inventory_Audit_Details.Size = new System.Drawing.Size(543, 135);
+            this.Inventory_Audit_Details.Size = new System.Drawing.Size(690, 308);
             this.Inventory_Audit_Details.TabIndex = 7;
             this.Inventory_Audit_Details.Text = "Inventory Audit Details";
             this.Inventory_Audit_Details.UseVisualStyleBackColor = true;
@@ -615,7 +633,7 @@
             // 
             this.LPO_Activity.Location = new System.Drawing.Point(4, 22);
             this.LPO_Activity.Name = "LPO_Activity";
-            this.LPO_Activity.Size = new System.Drawing.Size(543, 135);
+            this.LPO_Activity.Size = new System.Drawing.Size(690, 308);
             this.LPO_Activity.TabIndex = 8;
             this.LPO_Activity.Text = "LPO Activity";
             this.LPO_Activity.UseVisualStyleBackColor = true;
@@ -625,7 +643,7 @@
             this.bar_panel1.Controls.Add(this.tabControl4);
             this.bar_panel1.Location = new System.Drawing.Point(87, 76);
             this.bar_panel1.Name = "bar_panel1";
-            this.bar_panel1.Size = new System.Drawing.Size(562, 183);
+            this.bar_panel1.Size = new System.Drawing.Size(722, 405);
             this.bar_panel1.TabIndex = 4;
             // 
             // tabControl4
@@ -693,7 +711,7 @@
             this.employee_panel1.Controls.Add(this.tabControl6);
             this.employee_panel1.Location = new System.Drawing.Point(89, 77);
             this.employee_panel1.Name = "employee_panel1";
-            this.employee_panel1.Size = new System.Drawing.Size(561, 182);
+            this.employee_panel1.Size = new System.Drawing.Size(720, 404);
             this.employee_panel1.TabIndex = 6;
             // 
             // tabControl6
@@ -761,7 +779,7 @@
             this.kitchen_panel1.Controls.Add(this.tabControl5);
             this.kitchen_panel1.Location = new System.Drawing.Point(88, 77);
             this.kitchen_panel1.Name = "kitchen_panel1";
-            this.kitchen_panel1.Size = new System.Drawing.Size(562, 183);
+            this.kitchen_panel1.Size = new System.Drawing.Size(721, 404);
             this.kitchen_panel1.TabIndex = 8;
             // 
             // tabControl5
@@ -829,7 +847,7 @@
             this.room_panel3.Controls.Add(this.tabControl1);
             this.room_panel3.Location = new System.Drawing.Point(88, 77);
             this.room_panel3.Name = "room_panel3";
-            this.room_panel3.Size = new System.Drawing.Size(560, 182);
+            this.room_panel3.Size = new System.Drawing.Size(721, 404);
             this.room_panel3.TabIndex = 10;
             // 
             // tabControl1
@@ -907,7 +925,7 @@
             this.home_panel1.Controls.Add(this.tabControl8);
             this.home_panel1.Location = new System.Drawing.Point(88, 77);
             this.home_panel1.Name = "home_panel1";
-            this.home_panel1.Size = new System.Drawing.Size(561, 182);
+            this.home_panel1.Size = new System.Drawing.Size(718, 404);
             this.home_panel1.TabIndex = 12;
             // 
             // tabControl8
@@ -970,19 +988,13 @@
             this.Employee_Debit.Text = "Employee Debit";
             this.Employee_Debit.UseVisualStyleBackColor = true;
             // 
-            // exit_Button2
+            // dataGridView1
             // 
-            this.exit_Button2.BackColor = System.Drawing.Color.Transparent;
-            this.exit_Button2.Image = ((System.Drawing.Image)(resources.GetObject("exit_Button2.Image")));
-            this.exit_Button2.ImageActive = null;
-            this.exit_Button2.Location = new System.Drawing.Point(794, 4);
-            this.exit_Button2.Name = "exit_Button2";
-            this.exit_Button2.Size = new System.Drawing.Size(34, 31);
-            this.exit_Button2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.exit_Button2.TabIndex = 13;
-            this.exit_Button2.TabStop = false;
-            this.exit_Button2.Zoom = 10;
-            this.exit_Button2.Click += new System.EventHandler(this.bunifuImageButton2_Click);
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(109, 95);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(265, 114);
+            this.dataGridView1.TabIndex = 1;
             // 
             // main
             // 
@@ -1006,10 +1018,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             this.dock_panel2.ResumeLayout(false);
             this.dock_panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.exit_Button2)).EndInit();
             this.customer_panel1.ResumeLayout(false);
             this.tabControl2.ResumeLayout(false);
             this.Inventory_panel1.ResumeLayout(false);
             this.tabControl3.ResumeLayout(false);
+            this.Inventory_Master.ResumeLayout(false);
             this.bar_panel1.ResumeLayout(false);
             this.tabControl4.ResumeLayout(false);
             this.employee_panel1.ResumeLayout(false);
@@ -1020,7 +1034,7 @@
             this.tabControl1.ResumeLayout(false);
             this.home_panel1.ResumeLayout(false);
             this.tabControl8.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.exit_Button2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1099,6 +1113,7 @@
         private System.Windows.Forms.TabPage Employee_Department;
         private System.Windows.Forms.TabPage Employee_Debit;
         private Bunifu.Framework.UI.BunifuImageButton exit_Button2;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
 

@@ -164,7 +164,10 @@ namespace HMIS
           
           
         }
-
+        private void exitToolStripMenuItem_Click (Object sender, EventArgs e)
+        {
+            System.Windows.Forms.Application.Exit();
+        }
         private void laundry_Button7_Click(object sender, EventArgs e)
         {
             
@@ -173,7 +176,7 @@ namespace HMIS
 
         private void bunifuImageButton2_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            
         }
     }
 }
